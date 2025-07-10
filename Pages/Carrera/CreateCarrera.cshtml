@@ -1,0 +1,32 @@
+﻿@page
+@model sistema_academico.Pages.Carrera.CreateCarreraModel
+@{
+    <form method="post">
+        <div class="form-group">
+            <display>Name</display>
+            <input asp-for="Carreras.Nombre" class="form-control" />
+            <span asp-validation-for="Carreras.Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <display>Duration (in Ages)</display>
+            <input asp-for="Carreras.DuracionAnios" class="form-control" />
+            <span asp-validation-for="Carreras.DuracionAnios" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <display>Title awarded</display>
+            <input asp-for="Carreras.TituloOtorgado" class="form-control" />
+            <span asp-validation-for="Carreras.TituloOtorgado" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <display>Modality</display>
+            <select asp-for="Carreras.Modalidad"
+                    asp-items="@(new SelectList(Model.Modalidades))"
+                    class="form-control">
+                <option value="">Select a modality</option>
+            </select>
+            <span asp-validation-for="Carreras.Modalidad" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Save and Send</button>
+    </form>
+}

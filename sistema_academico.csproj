@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>sistema_academico</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data2\**" />
+    <Content Remove="Data2\**" />
+    <EmbeddedResource Remove="Data2\**" />
+    <None Remove="Data2\**" />
+  </ItemGroup>
+
+</Project>
