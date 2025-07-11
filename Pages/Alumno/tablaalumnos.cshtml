@@ -3,7 +3,7 @@
 @{
 }
 <a asp-page="CreateAlumno" class="btn btn-success mb-3">Agregar alumno</a>
-@if (Model.listaAlumnosMotrar.Count == 0)
+@if (Model.Alumnos.Count == 0)
 {
     <p>No hay alumnos cargados</p>
 }
@@ -21,7 +21,8 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var alumno in Model.listaAlumnosMotrar)
+            @* alumnos *@
+            @foreach (var alumno in Model.Alumnos)
             {
                 <tr>
                     <td>@alumno.Id</td>
@@ -31,9 +32,14 @@ else
                     <td>@alumno.Email</td>
                     <td>@alumno.FechaNacimiento</td>
                     <td>
-                        <a asp-page="EditAlumno" asp-route-id="@alumno.Id" class="btn btn-warning btn-sm">Editar</a>
-                        <a asp-page="EliminarAlumno" asp-route-id="@alumno.Id" class="btn btn-warning btn-sm">Eliminar</a>
+                        <a asp-page="EditarAlumno" asp-route-id="@alumno.Id" class="btn btn-warning btn-sm">Editar</a>
+                        <a asp-page="DeleateAlumno" asp-route-id="@alumno.Id" class="btn btn-warning btn-sm">Eliminar</a>
                     </td>
+
+                    @* 
+                        tahiel hdp fijate los nombres
+                    *@
+
                 </tr>
             }
         </tbody>

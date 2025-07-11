@@ -15,7 +15,7 @@ namespace sistema_academico.Models
 
         [Required(ErrorMessage = "El DNI no puede estar vacio")]
         [Display(Name = "Numero de DNI")]
-        public int Dni { get; set; }
+        public string Dni { get; set; }
 
         [Required(ErrorMessage = "El email no puede estar vacio")]
         [EmailAddress]

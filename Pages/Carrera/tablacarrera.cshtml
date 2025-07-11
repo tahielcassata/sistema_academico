@@ -32,9 +32,12 @@ else
                     <td>@carrera.DuracionAnios</td>
                     <td>@carrera.TituloOtorgado</td>
                     <td>
-                        <a asp-page="EditCarrera" asp-route-id="@carrera.Id" class="btn btn-warning btn-sm">Editar</a>
-                        <a asp-page="EliminarCarrera" asp-route-id="@carrera.Id" class="btn btn-warning btn-sm">Eliminar</a>
+                        <a asp-page="EditarCarrera" asp-route-id="@carrera.Id" class="btn btn-warning btn-sm">Editar</a>
+                        <a asp-page="DeleteCarrera" asp-route-id="@carrera.Id" class="btn btn-warning btn-sm">Eliminar</a>
                     </td>
+                    @* 
+                        tahiel hdp fijate los nombres
+                    *@
 
                 </tr>
             }

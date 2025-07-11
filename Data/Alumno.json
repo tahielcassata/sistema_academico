@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "Id": 3,
+    "Nombre": "tahiel",
+    "Apellido": "cassata",
+    "Dni": "123",
+    "Email": "tahiel@gmail.com",
+    "FechaNacimiento": "5511-11-11"
+  },
+  {
+    "Id": 4,
+    "Nombre": "Juan",
+    "Apellido": "rodriguez",
+    "Dni": "123",
+    "Email": "juan4@gmail.com",
+    "FechaNacimiento": "4444-11-11"
+  }
+]
